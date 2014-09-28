@@ -1,8 +1,0 @@
-c:\users\fred\documents\visual studio 2012\Projects\FileSplitter\FileSplitter\bin\Debug\FileSplitter.exe
-c:\users\fred\documents\visual studio 2012\Projects\FileSplitter\FileSplitter\bin\Debug\FileSplitter.pdb
-c:\users\fred\documents\visual studio 2012\Projects\FileSplitter\FileSplitter\obj\Debug\FileSplitter.csprojResolveAssemblyReference.cache
-c:\users\fred\documents\visual studio 2012\Projects\FileSplitter\FileSplitter\obj\Debug\FileSplitter.FormMain.resources
-c:\users\fred\documents\visual studio 2012\Projects\FileSplitter\FileSplitter\obj\Debug\FileSplitter.Properties.Resources.resources
-c:\users\fred\documents\visual studio 2012\Projects\FileSplitter\FileSplitter\obj\Debug\FileSplitter.csproj.GenerateResource.Cache
-c:\users\fred\documents\visual studio 2012\Projects\FileSplitter\FileSplitter\obj\Debug\FileSplitter.exe
-c:\users\fred\documents\visual studio 2012\Projects\FileSplitter\FileSplitter\obj\Debug\FileSplitter.pdb
