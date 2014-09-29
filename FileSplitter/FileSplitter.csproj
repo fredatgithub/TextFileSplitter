@@ -31,9 +31,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+<<<<<<< HEAD
   <PropertyGroup>
     <StartupObject>FileSplitter.Program</StartupObject>
   </PropertyGroup>
+=======
+>>>>>>> 3f613d36b85b91c2525a0c20f0567a0fbada3cc7
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
