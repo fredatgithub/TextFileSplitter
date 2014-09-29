@@ -70,10 +70,7 @@
       this.textBoxNombreDeLigneFichier = new System.Windows.Forms.TextBox();
       this.textBoxValeurDerniereLigne = new System.Windows.Forms.TextBox();
       this.progressBar1 = new System.Windows.Forms.ProgressBar();
-<<<<<<< HEAD
       this.buttonLireFichier = new System.Windows.Forms.Button();
-=======
->>>>>>> 3f613d36b85b91c2525a0c20f0567a0fbada3cc7
       this.menuStrip1.SuspendLayout();
       this.SuspendLayout();
       // 
@@ -96,11 +93,7 @@
             this.aideToolStripMenuItem});
       this.menuStrip1.Location = new System.Drawing.Point(0, 0);
       this.menuStrip1.Name = "menuStrip1";
-<<<<<<< HEAD
-      this.menuStrip1.Size = new System.Drawing.Size(652, 24);
-=======
       this.menuStrip1.Size = new System.Drawing.Size(677, 24);
->>>>>>> 3f613d36b85b91c2525a0c20f0567a0fbada3cc7
       this.menuStrip1.TabIndex = 1;
       this.menuStrip1.Text = "menuStrip1";
       // 
@@ -364,15 +357,9 @@
       // 
       // buttonFileSplit
       // 
-<<<<<<< HEAD
-      this.buttonFileSplit.Location = new System.Drawing.Point(184, 207);
-      this.buttonFileSplit.Name = "buttonFileSplit";
-      this.buttonFileSplit.Size = new System.Drawing.Size(170, 23);
-=======
-      this.buttonFileSplit.Location = new System.Drawing.Point(40, 207);
+      this.buttonFileSplit.Location = new System.Drawing.Point(182, 207);
       this.buttonFileSplit.Name = "buttonFileSplit";
       this.buttonFileSplit.Size = new System.Drawing.Size(92, 23);
->>>>>>> 3f613d36b85b91c2525a0c20f0567a0fbada3cc7
       this.buttonFileSplit.TabIndex = 6;
       this.buttonFileSplit.Text = "Couper Fichier";
       this.buttonFileSplit.UseVisualStyleBackColor = true;
@@ -417,10 +404,9 @@
       // progressBar1
       // 
       this.progressBar1.Dock = System.Windows.Forms.DockStyle.Bottom;
-<<<<<<< HEAD
-      this.progressBar1.Location = new System.Drawing.Point(0, 243);
+      this.progressBar1.Location = new System.Drawing.Point(0, 280);
       this.progressBar1.Name = "progressBar1";
-      this.progressBar1.Size = new System.Drawing.Size(652, 23);
+      this.progressBar1.Size = new System.Drawing.Size(677, 23);
       this.progressBar1.TabIndex = 11;
       // 
       // buttonLireFichier
@@ -429,27 +415,16 @@
       this.buttonLireFichier.Name = "buttonLireFichier";
       this.buttonLireFichier.Size = new System.Drawing.Size(132, 23);
       this.buttonLireFichier.TabIndex = 12;
-      this.buttonLireFichier.Text = "Lire Fichier";
+      this.buttonLireFichier.Text = "Lire Fichier Info";
       this.buttonLireFichier.UseVisualStyleBackColor = true;
       this.buttonLireFichier.Click += new System.EventHandler(this.buttonLireFichier_Click);
       // 
-=======
-      this.progressBar1.Location = new System.Drawing.Point(0, 280);
-      this.progressBar1.Name = "progressBar1";
-      this.progressBar1.Size = new System.Drawing.Size(677, 23);
-      this.progressBar1.TabIndex = 11;
-      // 
->>>>>>> 3f613d36b85b91c2525a0c20f0567a0fbada3cc7
       // FormMain
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
-      this.ClientSize = new System.Drawing.Size(652, 266);
-      this.Controls.Add(this.buttonLireFichier);
-=======
       this.ClientSize = new System.Drawing.Size(677, 303);
->>>>>>> 3f613d36b85b91c2525a0c20f0567a0fbada3cc7
+      this.Controls.Add(this.buttonLireFichier);
       this.Controls.Add(this.progressBar1);
       this.Controls.Add(this.textBoxValeurDerniereLigne);
       this.Controls.Add(this.textBoxNombreDeLigneFichier);
@@ -464,10 +439,7 @@
       this.Controls.Add(this.menuStrip1);
       this.MainMenuStrip = this.menuStrip1;
       this.Name = "FormMain";
-<<<<<<< HEAD
       this.ShowIcon = false;
-=======
->>>>>>> 3f613d36b85b91c2525a0c20f0567a0fbada3cc7
       this.Text = "Coupeur de fichier texte";
       this.Load += new System.EventHandler(this.FormMain_Load);
       this.menuStrip1.ResumeLayout(false);
@@ -520,10 +492,6 @@
     private System.Windows.Forms.TextBox textBoxNombreDeLigneFichier;
     private System.Windows.Forms.TextBox textBoxValeurDerniereLigne;
     private System.Windows.Forms.ProgressBar progressBar1;
-<<<<<<< HEAD
     private System.Windows.Forms.Button buttonLireFichier;
-=======
->>>>>>> 3f613d36b85b91c2525a0c20f0567a0fbada3cc7
   }
 }
-

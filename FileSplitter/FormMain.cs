@@ -1,13 +1,8 @@
 ﻿using System;
-<<<<<<< HEAD
 using System.Diagnostics;
 using System.Globalization;
 using System.IO;
 using System.Reflection;
-=======
-using System.Globalization;
-using System.IO;
->>>>>>> 3f613d36b85b91c2525a0c20f0567a0fbada3cc7
 using System.Windows.Forms;
 
 namespace FileSplitter
@@ -22,15 +17,9 @@ namespace FileSplitter
     private int numberOfLineToCut = 1;
     private string fileName = string.Empty;
     private string fullFileName = string.Empty;
-<<<<<<< HEAD
     private int nombreTotalDeLignesDuFichier;
     private bool fileHasBeenReadOnce;
     
-=======
-    private int nombreTotalDeLignesDuFichier = 0;
-
-
->>>>>>> 3f613d36b85b91c2525a0c20f0567a0fbada3cc7
     private void quitterToolStripMenuItem_Click(object sender, EventArgs e)
     {
       Application.Exit();
@@ -57,22 +46,14 @@ namespace FileSplitter
 
     private void buttonFileSplit_Click(object sender, EventArgs e)
     {
-<<<<<<< HEAD
       // validation of file path
-=======
-      // valider chemin fichier
->>>>>>> 3f613d36b85b91c2525a0c20f0567a0fbada3cc7
       if (textBoxfilePath.Text == string.Empty)
       {
         MessageBox.Show("Le chemin du fichier ne peut pas être vide");
         return;
       }
 
-<<<<<<< HEAD
       // validation of number of lines
-=======
-      //valider nombre de ligne
->>>>>>> 3f613d36b85b91c2525a0c20f0567a0fbada3cc7
       if (!int.TryParse(textBoxNumberOfLines.Text, out numberOfLineToCut))
       {
         MessageBox.Show("Le nombre de ligne doit être un entier");
@@ -89,12 +70,9 @@ namespace FileSplitter
           ligneCourante = streamReader.ReadLine();
           nombreTotalDeLignesDuFichier++;
         }
-<<<<<<< HEAD
 
         fileHasBeenReadOnce = true;
-=======
         
->>>>>>> 3f613d36b85b91c2525a0c20f0567a0fbada3cc7
         textBoxNombreDeLigneFichier.Text = nombreTotalDeLignesDuFichier.ToString(CultureInfo.InvariantCulture);
         textBoxValeurDerniereLigne.Text = ligneCourante;
         streamReader.Close();
@@ -103,25 +81,16 @@ namespace FileSplitter
       {
         MessageBox.Show("Une erreur est apparue\n{0}", exception.Message);
       }
-<<<<<<< HEAD
-=======
-
-      
->>>>>>> 3f613d36b85b91c2525a0c20f0567a0fbada3cc7
     }
 
     private void FormMain_Load(object sender, EventArgs e)
     {
-<<<<<<< HEAD
       DisplayTitle();
-=======
->>>>>>> 3f613d36b85b91c2525a0c20f0567a0fbada3cc7
       fullFileName = textBoxfilePath.Text;
       numberOfLineToCut = int.Parse(textBoxNumberOfLines.Text);
       progressBar1.Visible = false;
     }
 
-<<<<<<< HEAD
     private void DisplayTitle()
     {
       Assembly assembly = Assembly.GetExecutingAssembly();
@@ -165,13 +134,5 @@ namespace FileSplitter
         MessageBox.Show("Une erreur est apparue\n{0}", exception.Message);
       }
     }
-=======
-    private void copierToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-      // quel controle a le focus
-      Clipboard.SetText(ActiveControl.Text);
-    }
-
->>>>>>> 3f613d36b85b91c2525a0c20f0567a0fbada3cc7
   }
 }
