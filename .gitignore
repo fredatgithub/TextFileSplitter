@@ -6,6 +6,10 @@
 *.user
 *.sln.docstates
 
+#zip and RAR files
+*.rar
+*.zip
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
@@ -16,6 +20,8 @@ x86/
 build/
 bld/
 [Bb]in/
+obj/
+Obj/
 [Oo]bj/
 
 # Roslyn cache directories
