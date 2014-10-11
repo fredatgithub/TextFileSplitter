@@ -41,8 +41,23 @@ namespace FileSplitter
       }
 
       textBoxfilePath.Text = ofd.FileName;
-      fullFileName = ofd.FileName;
+      fullFileName = RemoveNumber(ofd.FileName);
       fileName = ofd.SafeFileName;
+    }
+
+    private static string RemoveNumber(string s)
+    {
+      // return s.Where(t => !"0123456789".Contains(t.ToString())).Aggregate(string.Empty, (current, t) => current + t);
+      string result = string.Empty;
+      for (int i = 0; i < s.Length; i++)
+      {
+        if (!"0123456789-".Contains(s[i].ToString())) 
+        {
+          result += s[i];
+        }
+      }
+
+      return result;
     }
 
     private void buttonFileSplit_Click(object sender, EventArgs e)
