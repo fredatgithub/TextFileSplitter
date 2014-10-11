@@ -41,7 +41,7 @@ namespace FileSplitter
       }
 
       textBoxfilePath.Text = ofd.FileName;
-      fullFileName = RemoveNumber(ofd.FileName);
+      fullFileName = ofd.FileName;
       fileName = ofd.SafeFileName;
     }
 
@@ -105,7 +105,7 @@ namespace FileSplitter
           if (compteurDeLigneCoupee == numberOfLineToCut)
           {
             // écriture dans un fichier séparé
-            StreamWriter sw = new StreamWriter(fullFileName.Substring(0, fullFileName.Length - 4) + "-" + ligneCourante + fullFileName.Substring(fullFileName.Length - 4, 4));
+            StreamWriter sw = new StreamWriter(RemoveNumber(fullFileName.Substring(0, fullFileName.Length - 4)) + "-" + ligneCourante + RemoveNumber(fullFileName.Substring(fullFileName.Length - 4, 4)));
             foreach (string ligne in paquetDeLigneList)
             {
               sw.WriteLine(ligne);
@@ -120,7 +120,7 @@ namespace FileSplitter
         // écriture du dernier fichier
         if (paquetDeLigneList.Count > 0)
         {
-          StreamWriter sw = new StreamWriter(fullFileName.Substring(0, fullFileName.Length - 4) + "-" + ligneCourante + fullFileName.Substring(fullFileName.Length - 4, 4));
+          StreamWriter sw = new StreamWriter(RemoveNumber(fullFileName.Substring(0, fullFileName.Length - 4)) + "-" + ligneCourante + RemoveNumber(fullFileName.Substring(fullFileName.Length - 4, 4)));
           foreach (string ligne in paquetDeLigneList)
           {
             sw.WriteLine(ligne);
