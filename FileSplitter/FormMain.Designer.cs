@@ -327,7 +327,7 @@
       this.textBoxfilePath.Name = "textBoxfilePath";
       this.textBoxfilePath.Size = new System.Drawing.Size(568, 20);
       this.textBoxfilePath.TabIndex = 2;
-      this.textBoxfilePath.Text = "C:\\Users\\fred\\Documents\\primes\\cpp_version\\primes.txt";
+      this.textBoxfilePath.Text = "C:\\Users\\fred\\Documents\\primes\\cpp_version\\test\\primes.txt";
       // 
       // labelFilePath
       // 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
 using System.IO;
@@ -76,6 +77,44 @@ namespace FileSplitter
         textBoxNombreDeLigneFichier.Text = nombreTotalDeLignesDuFichier.ToString(CultureInfo.InvariantCulture);
         textBoxValeurDerniereLigne.Text = ligneCourante;
         streamReader.Close();
+        // on coupe le fichier
+        streamReader = new StreamReader(fullFileName);
+        int compteurDeLigneCoupee = 0;
+        List<string> paquetDeLigneList = new List<string>();
+
+        while (streamReader.Peek() >= 0)
+        {
+          ligneCourante = streamReader.ReadLine();
+          compteurDeLigneCoupee++;
+          paquetDeLigneList.Add(ligneCourante);
+          if (compteurDeLigneCoupee == numberOfLineToCut)
+          {
+            // écriture dans un fichier séparé
+            StreamWriter sw = new StreamWriter(fullFileName.Substring(0, fullFileName.Length - 4) + "-" + ligneCourante + fullFileName.Substring(fullFileName.Length - 4, 4));
+            foreach (string ligne in paquetDeLigneList)
+            {
+              sw.WriteLine(ligne);
+            }
+
+            sw.Close();
+            paquetDeLigneList = new List<string>();
+            compteurDeLigneCoupee = 0;
+          }
+        }
+
+        // écriture du dernier fichier
+        if (paquetDeLigneList.Count > 0)
+        {
+          StreamWriter sw = new StreamWriter(fullFileName.Substring(0, fullFileName.Length - 4) + "-" + ligneCourante + fullFileName.Substring(fullFileName.Length - 4, 4));
+          foreach (string ligne in paquetDeLigneList)
+          {
+            sw.WriteLine(ligne);
+          }
+
+          sw.Close();
+          paquetDeLigneList = new List<string>();
+          //compteurDeLigneCoupee = 0;
+        }
       }
       catch (Exception exception)
       {
